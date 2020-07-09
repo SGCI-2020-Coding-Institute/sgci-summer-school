@@ -31,9 +31,10 @@ Execute all of these steps in the sgci-summer-school directory.
 
 4. Optionally, push your container to DockerHub, replacing <YOUR_DOCKERHUB_REPO> with the name of the hub that you created in step 3 of the Docker intro (https://docs.docker.com/get-started/part3/).
 
-   `docker tag flask-demo:1.0 <YOUR_DOCKERHUB_REPO>/flask-demo:1.0
-   
-    docker push <YOUR_DOCKERHUB_REPO>/flask-demo:1.0`
+   ```
+   docker tag flask-demo:1.0 <YOUR_DOCKERHUB_REPO>/flask-demo:1.0
+   docker push <YOUR_DOCKERHUB_REPO>/flask-demo:1.0
+   ```
 
 Now anyone who wants to use your application can just download it from DockerHub and run it in their own local Docker environment.
 
