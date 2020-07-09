@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: junk-demo
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      junk-test: web
+  template:
+    metadata:
+      labels:
+        junk-test: web
+    spec:
+      containers:
+      - name: junk-site
+        image: flask-demo:0.1
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: junk-entrypoint
+  namespace: default
+spec:
+  type: NodePort
+  selector:
+    junk-test: web
+  ports:
+  - port: 5001
+    targetPort: 5001
+    nodePort: 30001
+
+
+    
+
+
+
+    
