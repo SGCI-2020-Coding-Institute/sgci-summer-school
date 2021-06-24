@@ -1,8 +1,8 @@
 # Prerequisites:
 1. Make sure you have git and python. Install if necessary. 
-2. Install flask: https://flask.palletsprojects.com/en/1.1.x/installation/
-3. Install docker: https://docs.docker.com/get-docker/
-4. Use Docker to install Kubernetes: https://docs.docker.com/get-started/orchestration/
+2. Install flask: https://flask.palletsprojects.com/en/2.0.x/
+3. (Optional) Install docker: https://docs.docker.com/get-docker/
+4. (Optional) Use Docker to install Kubernetes: https://docs.docker.com/get-started/orchestration/
 
 # Make a simple Flask application
 1. Check out the sample code:
